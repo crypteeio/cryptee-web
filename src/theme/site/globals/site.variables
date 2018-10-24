@@ -1,0 +1,5 @@
+/*******************************
+     User Global Variables
+*******************************/
+@backgroundColor: #DEDEDE;
+@background: @backgroundColor;
