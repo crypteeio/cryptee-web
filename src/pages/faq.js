@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Icon, Header, Grid, Segment, Divider, List, ListItem } from 'semantic-ui-react'
+import { version, dependencies } from '../../package.json'
 
 export default class Faq extends Component {
   render() {
@@ -23,7 +24,7 @@ export default class Faq extends Component {
 			<br />
 			All Trezor devices are PIN-protected and easily recoverable using the recovery seed. For more information, see the <a href="https://trezor.io/security/" target="_blank" rel="noopener noreferrer">Trezor security page</a>.
       		<Divider section />			  
-			<Header as='h2'>What is Trezor?</Header>
+			<Header as='h2'>How could Cryptee help me? Why should I use it?</Header>
 			To put it simply - for data protection. Let us list only a few examples.
 			<List bulleted>
 				<ListItem>You might want to protect your company data from being stolen.</ListItem>

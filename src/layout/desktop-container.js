@@ -9,6 +9,8 @@ import {
 } from 'semantic-ui-react'
 import { NavLink } from 'react-router-dom';
 
+import { version, dependencies } from '../../package.json'
+
 export default class DesktopContainer extends Component {
     state = {}
 
@@ -28,7 +30,7 @@ export default class DesktopContainer extends Component {
                     <Menu fixed='top' inverted>
                         <Container text>
                             <Menu.Item as={NavLink} header exact to='/'>
-                                Cryptee
+                                Cryptee&nbsp;<sub><small>v{version}</small></sub>
                             </Menu.Item>
                             <Dropdown item text='Encrypt'>
                                 <Dropdown.Menu>

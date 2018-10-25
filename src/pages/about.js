@@ -18,8 +18,6 @@ export default () => {
         <Header as='h2'>Contacts</Header>
         <a href='https://lukasrada.cz' target='_blank' rel="noopener noreferrer">https://lukasrada.cz</a>
         <br />
-        <a href='https://twitter.com/LukyRada' target='_blank' rel="noopener noreferrer">https://twitter.com/LukyRada</a>
-        <br />
         <a href='https://twitter.com/muflonobycajny' target='_blank' rel="noopener noreferrer">https://twitter.com/muflonobycajny</a>
         <Header as='h2'>Donate</Header>
         <p>Did you find Crytpee helpful? Your appreciation is always welcome :)</p>

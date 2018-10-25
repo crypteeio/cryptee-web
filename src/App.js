@@ -34,7 +34,7 @@ const routes = [
 const App = () => (
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <div>
+      <div>        
         <DesktopContainer>
           { routes.map(route => <Route key={route.path} {...route} />) }
         </DesktopContainer>

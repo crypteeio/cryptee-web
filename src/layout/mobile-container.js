@@ -9,6 +9,7 @@ import {
   Sidebar
 } from 'semantic-ui-react'
 import { NavLink } from 'react-router-dom';
+import { version, dependencies } from '../../package.json'
 
 export default class MobileContainer extends Component {
     state = {}
@@ -55,7 +56,7 @@ export default class MobileContainer extends Component {
                   <Menu.Item onClick={this.handleToggle}>
                       <Icon name='sidebar' />
                     </Menu.Item> 
-                    <Menu.Item position='left' as={NavLink} to='/' exact>Cryptee</Menu.Item>                                       
+                    <Menu.Item position='left' as={NavLink} to='/' exact>Cryptee&nbsp;<sub><small>v{version}</small></sub></Menu.Item>                                       
                   </Menu>
                 </Container>
               </Segment>

@@ -31,7 +31,7 @@ export default class Home extends Component {
 						fontWeight: 'normal',
 						marginTop: mobile ? '0.5em' : '1.5em'
 					}}
-				/>
+				/>				
 				<iframe
 					id="ytplayer"
 					title="Cryptee - Presentation"
