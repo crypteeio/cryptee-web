@@ -1,5 +1,6 @@
 import React from 'react'
-import { Header, Segment, Input, Divider } from 'semantic-ui-react';
+import { Header, Segment, Input, Divider, List, ListItem } from 'semantic-ui-react';
+import { dependencies } from '../../package.json'
 
 export default () => {
     const inputCopyAction = (inputId) => ({
@@ -25,5 +26,7 @@ export default () => {
         <Input id="btc-address" readOnly label='BTC' value='3JyDBH1oJZ3TUeXXTDdcv1YdLWNJJwT8a1' action={inputCopyAction("btc-address")} fluid />
         <Divider hidden />
         <Input id="ltc-address" readOnly label='LTC' value='MJmhtm29f9Cb7hxbMHWnFNa3fEuEQYBDNR' action={inputCopyAction("ltc-address")} fluid />
+        <Header as='h2'>Core dependencies</Header>
+        cryptee-core: {JSON.stringify(dependencies["cryptee-core"])}
     </Segment>
 }

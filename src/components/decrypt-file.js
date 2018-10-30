@@ -7,7 +7,7 @@ import moment from 'moment';
 import SemanticFormField from './common/semantic-ui-form';
 import eta from './common/eta';
 import { required, maxLength255 } from '../helpers/validation';
-import { decryptFile } from 'cryptee-core';
+import { decryptFile, readFileAsync, decodeFile } from 'cryptee-core';
 import { binarySave } from '../helpers/binary-save';
 
 const FormName = 'decryptFileForm';
@@ -20,6 +20,7 @@ type DecryptFileState = {
 }
 
 class DecryptFile extends React.Component<{}, DecryptFileState> {
+    start: number;
     constructor(props) {
         super(props);
 
@@ -30,41 +31,43 @@ class DecryptFile extends React.Component<{}, DecryptFileState> {
             lastPerformanceDeltaMiliseconds: 0
         }
     }
-    onDecryptFile = async values => {
-        this.setState({ progressTotal: 0, lastPerformanceDeltaMiliseconds: 0, lastProgressDelta: 0 })
-        
-        let start;
-        const callback = ({ progress, total }) => {
-            const p = progress + 1;
-            if (progress === 0) {
-                start = Date.now();
-            }
-
-            this.setState((prevState) => {
-                let lastProgressDelta = prevState.lastProgressDelta;
-                const progressDelta = Math.round((p / prevState.progressTotal) * 100);
-
-                let lastPerformanceDeltaMiliseconds = prevState.lastPerformanceDeltaMiliseconds;
-
-                if (lastProgressDelta < progressDelta) {
-                    lastProgressDelta = progressDelta;
-                    lastPerformanceDeltaMiliseconds = Date.now() - start;
-                }
-
-                return { 
-                    progress: p,
-                    lastProgressDelta,
-                    lastPerformanceDeltaMiliseconds
-                }
-            })
+    callback = ({ progress, total }) => {
+        const p = progress + 1;
+        if (progress === 0) {
+            this.start = Date.now();
         }
 
-        TrezorConnect.on(UI.BUNDLE_PROGRESS, callback)
+        this.setState((prevState) => {
+            let lastProgressDelta = prevState.lastProgressDelta;
+            const progressDelta = Math.round((p / prevState.progressTotal) * 100);
 
-        const decryptedFile = await decryptFile(values.file[0], values.key/*, progressTotal => this.setState({ progressTotal })*/)
+            let lastPerformanceDeltaMiliseconds = prevState.lastPerformanceDeltaMiliseconds;
+
+            if (lastProgressDelta < progressDelta) {
+                lastProgressDelta = progressDelta;
+                lastPerformanceDeltaMiliseconds = Date.now() - this.start;
+            }
+
+            return { 
+                progress: p,
+                lastProgressDelta,
+                lastPerformanceDeltaMiliseconds
+            }
+        })
+    }
+    onDecryptFile = async values => {
+        this.setState({ progressTotal: 0, lastPerformanceDeltaMiliseconds: 0, lastProgressDelta: 0 })
+
+        TrezorConnect.on(UI.BUNDLE_PROGRESS, this.callback)
+        const file = await readFileAsync(values.file[0])
+        const decodedFile = decodeFile(file)
+
+        this.setState({ progressTotal: decodedFile.value.length })
+
+        const decryptedFile = await decryptFile(decodedFile, values.key)
         binarySave(values.decryptedFileName, decryptedFile)
 
-        TrezorConnect.off(UI.BUNDLE_PROGRESS, callback)
+        TrezorConnect.off(UI.BUNDLE_PROGRESS, this.callback)
     }
     render() {
         const { submitting, pristine, handleSubmit } = this.props;

@@ -4,13 +4,14 @@ import { Header, Button, Form, Segment } from 'semantic-ui-react';
 
 import SemanticFormField from './common/semantic-ui-form';
 import { required, maxLength255 } from '../helpers/validation';
-import { decryptText } from 'cryptee-core';
+import { decodeText, decryptText } from 'cryptee-core';
 
 const FormName = 'decryptTextForm';
 
 class DecryptText extends React.Component {
     onDecryptText = async (values, dispatch) => {
-        const result = await decryptText(values.encryptedText, values.key);
+        const decoded = decodeText(values.encryptedText)
+        const result = await decryptText(decoded, values.key);
         dispatch(change(FormName, 'originalText', result))
     }
     render() {

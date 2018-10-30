@@ -9,7 +9,7 @@ import {
   Sidebar
 } from 'semantic-ui-react'
 import { NavLink } from 'react-router-dom';
-import { version, dependencies } from '../../package.json'
+import { version } from '../../package.json'
 
 export default class MobileContainer extends Component {
     state = {}

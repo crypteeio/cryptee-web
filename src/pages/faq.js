@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Icon, Header, Grid, Segment, Divider, List, ListItem } from 'semantic-ui-react'
-import { version, dependencies } from '../../package.json'
 
 export default class Faq extends Component {
   render() {

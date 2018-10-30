@@ -4,13 +4,14 @@ import { Field, reduxForm, change } from 'redux-form';
 import { Button, Form, Segment } from 'semantic-ui-react';
 import SemanticFormField from './common/semantic-ui-form';
 import { required, maxLength255 } from '../helpers/validation';
-import { encryptText } from 'cryptee-core';
+import { encodeText, encryptText } from 'cryptee-core';
 
 const FormName = 'encryptTextForm';
 
 class EncryptText extends React.Component {
     onEncryptText = async (values, dispatch) => {
-        const result = await encryptText(values.originalText, values.key);
+        const encoded = encodeText(values.originalText)
+        const result = await encryptText(encoded, values.key);
         dispatch(change(FormName, 'encryptedText', result))
     }
     render() {

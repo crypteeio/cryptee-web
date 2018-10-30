@@ -2236,9 +2236,9 @@ cross-spawn@^5.0.1:
     shebang-command "^1.2.0"
     which "^1.2.9"
 
-cryptee-core@1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/cryptee-core/-/cryptee-core-1.0.5.tgz#d71448632f68ad5b56789231a32388bca6766098"
+cryptee-core@1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/cryptee-core/-/cryptee-core-1.0.8.tgz#1a6840ca77b511c941f393adcd288abc04f4856f"
   dependencies:
     trezor-connect "6.0.0"
 
