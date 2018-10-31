@@ -126,7 +126,9 @@ export default class Faq extends Component {
 				</Grid>				
 				<Divider section />
 				<Header as='h2'>Is Cryptee open-source?</Header>
-				<p>Not yet, but during this year (2018) it will be open-source.</p>
+				<p>Yes.</p>
+				<p><a href="https://github.com/LukasRada/cryptee-core">cryptee-core</a></p>
+				<p><a href="https://github.com/LukasRada/cryptee-web">cryptee-web</a> (this web)</p>
 				<Divider section />
 				<Header as='h2'>How long does it take to encrypt the data?</Header>				
 				<p>It depends on the data size. Approximate time to encrypt 1 MB data is about 1 minute and 20 secs.</p>
