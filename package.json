@@ -2,6 +2,7 @@
   "name": "cryptee-web",
   "version": "1.0.1",
   "private": true,
+  "license": "MIT",
   "dependencies": {
     "@babel/core": "7.1.0",
     "@svgr/webpack": "2.4.1",
