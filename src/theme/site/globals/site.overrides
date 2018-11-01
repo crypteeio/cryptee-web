@@ -1,0 +1,13 @@
+/*******************************
+         Site Overrides
+*******************************/
+body {
+    background-color: @background
+}
+
+input {
+    border-radius: unset;
+}
+input:focus {
+  color: red
+}
