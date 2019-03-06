@@ -6,8 +6,8 @@ import './theme/semantic.less'
 import TrezorConnect from 'trezor-connect'
 
 TrezorConnect.manifest({
-    email: 'cryptee.io@gmail.com',
-    appUrl: 'https://cryptee.io'
+    email: 'INSERT YOUR EMAIL',
+    appUrl: 'INSERT YOUR APP URL'
 })
 
 ReactDOM.render(<App />, document.getElementById('root'));
