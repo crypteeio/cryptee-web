@@ -6,7 +6,7 @@ import {
 	Icon,
 	Divider,
 } from 'semantic-ui-react'
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default class Home extends Component {
 	render() {
@@ -39,13 +39,13 @@ export default class Home extends Component {
 					height="360"
 					style={{ border: "1px solid rgba(0, 0, 0, 0.87)", marginBottom: '1em', width: '100%' }}
 					src="https://www.youtube.com/embed/BTTHdwp7gLA?autoplay=0&origin=https://cryptee.io&cc_load_policy=1"
-					frameborder="0">
+					frameBorder="0">
 				</iframe>
-				<Button as={NavLink} to='/faq' secondary size={mobile ? 'small' : 'huge'}>
+				<Button as={Link} to='/faq' secondary size={mobile ? 'small' : 'huge'}>
 					Read FAQ&nbsp;&nbsp;<Icon name='file text' />
 				</Button>
 				{mobile ? <Divider hidden fitted /> : ''}
-				<Button as={NavLink} to='/encrypt/text' primary size={mobile ? 'small' : 'huge'}>
+				<Button as={Link} to='/encrypt/text' primary size={mobile ? 'small' : 'huge'}>
 					Get encrypted text<Icon name='right arrow' />
 				</Button>
 			</Container>

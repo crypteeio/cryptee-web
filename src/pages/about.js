@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Segment, Input, Divider, List, ListItem } from 'semantic-ui-react';
+import { Header, Segment, Input, Divider } from 'semantic-ui-react';
 import { dependencies } from '../../package.json'
 
 export default () => {
