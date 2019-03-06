@@ -1,8 +1,4 @@
 # cryptee-web v1.0.2
 Cryptee web aplication - Making data encryption easy with Trezor
 
-## Install
-```
-yarn
-yarn start
-```
+# This repository is read-only. For contributions see [https://github.com/crypteeio/cryptee-web](https://github.com/crypteeio/cryptee-web)
