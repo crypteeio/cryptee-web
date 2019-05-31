@@ -672,7 +672,6 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
-<<<<<<< HEAD
 "@babel/runtime@^7.3.1":
   version "7.3.4"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.3.4.tgz#73d12ba819e365fcf7fd152aed56d6df97d21c83"
@@ -680,8 +679,6 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
-=======
->>>>>>> refs/remotes/origin/master
 "@babel/template@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.0.0-beta.44.tgz#f8832f4fdcee5d59bf515e595fc5106c529b394f"
@@ -2246,20 +2243,12 @@ cross-spawn@^5.0.1:
     shebang-command "^1.2.0"
     which "^1.2.9"
 
-<<<<<<< HEAD
-cryptee-core@1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/cryptee-core/-/cryptee-core-1.0.9.tgz#6c2c5682cadaf4e24960f45be8315b9025c57c90"
-  integrity sha512-vMllg0rxSLbBZiJAF1wU7/Qc3GfGxFSW3ss4y6eWqDnTbe218nGn52OKhPimrvJEjgnxniDCtUfj3/RQiV+9Vw==
+cryptee-core@1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/cryptee-core/-/cryptee-core-1.0.10.tgz#b06f86a2fd37b8168af1e5bbf6d55af365afbd6c"
+  integrity sha512-sJrCM7Y7xvI0v1yFNT27KFmGdlRnacthI8rzquTd+RO8jcZISwNB/eZUuEHlJAAWNnBzAegrKgBWXuKHWoFa4A==
   dependencies:
-    trezor-connect "7.0.1"
-=======
-cryptee-core@1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/cryptee-core/-/cryptee-core-1.0.8.tgz#1a6840ca77b511c941f393adcd288abc04f4856f"
-  dependencies:
-    trezor-connect "6.0.0"
->>>>>>> refs/remotes/origin/master
+    trezor-connect "7.0.3"
 
 crypto-browserify@^3.11.0:
   version "3.12.0"
@@ -3104,7 +3093,6 @@ eventemitter3@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.1.0.tgz#090b4d6cdbd645ed10bf750d4b5407942d7ba163"
 
-<<<<<<< HEAD
 events@^1.0.0:
   version "1.1.1"
   resolved "http://registry.npmjs.org/events/-/events-1.1.1.tgz#9ebdb7635ad099c70dcc4c2a1f5004288e8bd924"
@@ -3114,12 +3102,6 @@ events@^3.0.0:
   resolved "https://registry.yarnpkg.com/events/-/events-3.0.0.tgz#9a0a0dfaf62893d92b875b8f2698ca4114973e88"
   integrity sha512-Dc381HFWJzEOhQ+d8pkNon++bk9h6cdAoAj4iE6Q4y6xgTzySWXlKn05/TVNpjnfRqi/X0EpJEJohPjNI3zpVA==
 
-=======
-events@^1.0.0, events@^1.1.1:
-  version "1.1.1"
-  resolved "http://registry.npmjs.org/events/-/events-1.1.1.tgz#9ebdb7635ad099c70dcc4c2a1f5004288e8bd924"
-
->>>>>>> refs/remotes/origin/master
 eventsource@0.1.6:
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/eventsource/-/eventsource-0.1.6.tgz#0acede849ed7dd1ccc32c811bb11b944d4f29232"
@@ -8305,24 +8287,14 @@ tr46@^1.0.1:
   dependencies:
     punycode "^2.1.0"
 
-<<<<<<< HEAD
-trezor-connect@7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/trezor-connect/-/trezor-connect-7.0.1.tgz#e57103729026177a92bfdefb64dd0d38f921ab1f"
-  integrity sha512-cMPwSGMfBpp4z5AZvpRwbYNOJU/X+WaxPm+O1Bl1qsdtpl1P4mX81KDtImY6GBk0xC8aKyOd/ZIqYWXZF9tCRQ==
+trezor-connect@7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/trezor-connect/-/trezor-connect-7.0.3.tgz#70c4bc26c0966e794fc280a12c1acc9fef88864f"
+  integrity sha512-1Y1ajCDF8dC5d2yrCUmVkNqXeOlucamQ6j6Ko7kaqNdge3g9KZ+O48jUwP/eGzei8oUvPZUHd7o4OhDHTlpLCw==
   dependencies:
     "@babel/runtime" "^7.3.1"
     events "^3.0.0"
     whatwg-fetch "^3.0.0"
-=======
-trezor-connect@6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/trezor-connect/-/trezor-connect-6.0.0.tgz#2a45336f29a4a3f2a8ad2d121363b0e7a1b767ef"
-  dependencies:
-    babel-runtime "^6.26.0"
-    events "^1.1.1"
-    whatwg-fetch "^2.0.4"
->>>>>>> refs/remotes/origin/master
 
 trim-right@^1.0.1:
   version "1.0.1"
@@ -8736,20 +8708,10 @@ whatwg-encoding@^1.0.1, whatwg-encoding@^1.0.3, whatwg-encoding@^1.0.5:
   dependencies:
     iconv-lite "0.4.24"
 
-<<<<<<< HEAD
 whatwg-fetch@3.0.0, whatwg-fetch@>=0.10.0, whatwg-fetch@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.0.0.tgz#fc804e458cc460009b1a2b966bc8817d2578aefb"
   integrity sha512-9GSJUgz1D4MfyKU7KRqwOjXCXTqWdFNvEr7eUBYchQiVc744mqK/MzXPNR2WsPkmkOa4ywfg8C2n8h+13Bey1Q==
-=======
-whatwg-fetch@3.0.0, whatwg-fetch@>=0.10.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.0.0.tgz#fc804e458cc460009b1a2b966bc8817d2578aefb"
-
-whatwg-fetch@^2.0.4:
-  version "2.0.4"
-  resolved "http://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-2.0.4.tgz#dde6a5df315f9d39991aa17621853d720b85566f"
->>>>>>> refs/remotes/origin/master
 
 whatwg-mimetype@^2.1.0, whatwg-mimetype@^2.2.0:
   version "2.2.0"
