@@ -2243,12 +2243,12 @@ cross-spawn@^5.0.1:
     shebang-command "^1.2.0"
     which "^1.2.9"
 
-cryptee-core@1.0.10:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/cryptee-core/-/cryptee-core-1.0.10.tgz#b06f86a2fd37b8168af1e5bbf6d55af365afbd6c"
-  integrity sha512-sJrCM7Y7xvI0v1yFNT27KFmGdlRnacthI8rzquTd+RO8jcZISwNB/eZUuEHlJAAWNnBzAegrKgBWXuKHWoFa4A==
+cryptee-core@1.0.12:
+  version "1.0.12"
+  resolved "https://registry.npmjs.org/cryptee-core/-/cryptee-core-1.0.12.tgz#cfc697488bfa1b3e778a46a7e9e28b8e077f3ff3"
+  integrity sha512-MRG/H1JfU5Uuvghs9ytJQ93A1k/Om1lQKX49/y3hSmINeK63IPi6FpDVQ586UOeoeYviNcITyZRS52WyZxf3Eg==
   dependencies:
-    trezor-connect "7.0.3"
+    trezor-connect "7.0.5"
 
 crypto-browserify@^3.11.0:
   version "3.12.0"
@@ -8287,10 +8287,10 @@ tr46@^1.0.1:
   dependencies:
     punycode "^2.1.0"
 
-trezor-connect@7.0.3:
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/trezor-connect/-/trezor-connect-7.0.3.tgz#70c4bc26c0966e794fc280a12c1acc9fef88864f"
-  integrity sha512-1Y1ajCDF8dC5d2yrCUmVkNqXeOlucamQ6j6Ko7kaqNdge3g9KZ+O48jUwP/eGzei8oUvPZUHd7o4OhDHTlpLCw==
+trezor-connect@7.0.5:
+  version "7.0.5"
+  resolved "https://registry.npmjs.org/trezor-connect/-/trezor-connect-7.0.5.tgz#00ebc0abd302177042b6ff9ba71e7bc491e4b360"
+  integrity sha512-cGHcNuO/kGVF6b1mp5VB/RwXcXwqZJDPLp3opx7vM+BQ8xB4oDAUdL+T8aCKRbDv6HwP/wvGwoaok/+9kYOPfA==
   dependencies:
     "@babel/runtime" "^7.3.1"
     events "^3.0.0"
