@@ -672,12 +672,12 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
-"@babel/runtime@^7.3.1":
-  version "7.3.4"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.3.4.tgz#73d12ba819e365fcf7fd152aed56d6df97d21c83"
-  integrity sha512-IvfvnMdSaLBateu0jfsYIpZTxAc2cKEXEMiezGGN75QcBcecDUKd3PgLAncT0oOgxKy8dd8hrJKj9MfzgfZd6g==
+"@babel/runtime@^7.7.2":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.8.3.tgz#0811944f73a6c926bb2ad35e918dcc1bfab279f1"
+  integrity sha512-fVHx1rzEmwB130VTkLnxR+HmxcTjGzH12LYQcFFoBwakMd3aOMD4OsRN7tGG/UOYE2ektgFrS8uACAoRk1CY0w==
   dependencies:
-    regenerator-runtime "^0.12.0"
+    regenerator-runtime "^0.13.2"
 
 "@babel/template@7.0.0-beta.44":
   version "7.0.0-beta.44"
@@ -2243,12 +2243,12 @@ cross-spawn@^5.0.1:
     shebang-command "^1.2.0"
     which "^1.2.9"
 
-cryptee-core@1.0.12:
-  version "1.0.12"
-  resolved "https://registry.npmjs.org/cryptee-core/-/cryptee-core-1.0.12.tgz#cfc697488bfa1b3e778a46a7e9e28b8e077f3ff3"
-  integrity sha512-MRG/H1JfU5Uuvghs9ytJQ93A1k/Om1lQKX49/y3hSmINeK63IPi6FpDVQ586UOeoeYviNcITyZRS52WyZxf3Eg==
+cryptee-core@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/cryptee-core/-/cryptee-core-1.1.0.tgz#ad153e6773c6c5c2a98a85a896c3a005aab4de17"
+  integrity sha512-JFRCULEFQhN2YSZwQ2rDzatnKeEgBuhEeJbowDhEW83bLW5mM0OObV+eZa1Zih1zoRK4xUBj124ANYw8zu0E9g==
   dependencies:
-    trezor-connect "7.0.5"
+    trezor-connect "8.0.13"
 
 crypto-browserify@^3.11.0:
   version "3.12.0"
@@ -7225,6 +7225,11 @@ regenerator-runtime@^0.12.0:
   version "0.12.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
 
+regenerator-runtime@^0.13.2:
+  version "0.13.3"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.3.tgz#7cf6a77d8f5c6f60eb73c5fc1955b2ceb01e6bf5"
+  integrity sha512-naKIZz2GQ8JWh///G7L3X6LaQUAMp2lvb1rvwwsURe/VXwD6VMfr+/1NuNw3ag8v2kY1aQ/go5SNn79O9JU7yw==
+
 regenerator-transform@^0.13.3:
   version "0.13.3"
   resolved "https://registry.yarnpkg.com/regenerator-transform/-/regenerator-transform-0.13.3.tgz#264bd9ff38a8ce24b06e0636496b2c856b57bcbb"
@@ -8287,12 +8292,12 @@ tr46@^1.0.1:
   dependencies:
     punycode "^2.1.0"
 
-trezor-connect@7.0.5:
-  version "7.0.5"
-  resolved "https://registry.npmjs.org/trezor-connect/-/trezor-connect-7.0.5.tgz#00ebc0abd302177042b6ff9ba71e7bc491e4b360"
-  integrity sha512-cGHcNuO/kGVF6b1mp5VB/RwXcXwqZJDPLp3opx7vM+BQ8xB4oDAUdL+T8aCKRbDv6HwP/wvGwoaok/+9kYOPfA==
+trezor-connect@8.0.13:
+  version "8.0.13"
+  resolved "https://registry.yarnpkg.com/trezor-connect/-/trezor-connect-8.0.13.tgz#e69bfe9db22ed0bc8a91b3bfc95d1ff392a808f7"
+  integrity sha512-A+c2lNJKcgAm1nBtKeI3usDvZGMGcPifc7YwBYyY9zqAYKYn2RUrHCC73DkbwOfJazrwvEs3wjV4yY4xch8HEQ==
   dependencies:
-    "@babel/runtime" "^7.3.1"
+    "@babel/runtime" "^7.7.2"
     events "^3.0.0"
     whatwg-fetch "^3.0.0"
 
